@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health is wealth</title>
+</head>
+<style>
+    body {
+        font-family: Georgia, serif;
+    }
+
+    h1 {
+        text-align: center;
+        border: 50px black;
+        margin: 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+        line-height: 100px;
+    }
+
+    .container {
+        text-align: center;
+        background-image: linear-gradient(to bottom, rgb(231, 205, 207), rgb(39, 180, 164));
+        padding: 10px 5px 10px 5px;
+        margin: 0px 50px;
+        line-height: normal;
+    }
+
+    p {
+        text-align: center;
+        margin: 20px;
+        padding: 0;
+        font-size: 12;
+        font-weight: normal;
+        font-family: serif;
+    }
+    a {
+        transition: all 200ms ease;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    a :hover {
+        background: white;
+        color: #6cd5e8;
+        border: 1px solid #5c8b90;
+      }
+
+    .more {
+        text-align: center;
+        margin: 20px;
+        padding: 0;
+        font-size: 12;
+        font-weight: lighter;
+        font-family: serif;
+    }
+    
+    button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #6cd5e8;
+        border: 1px solid #5c8b90;
+      }
+
+</style>
+<body>
+    <div class="container">
+    <h1>Let's Eat Healthy!</h1>
+    <h2>
+        <em>
+        Your health is your wealth
+        </em>
+    </h2>
+    <hr />
+    <img src="https://www.veganfoodandliving.com/wp-content/uploads/2021/10/Healthy-eating-blood-pressure-control-768x512.jpg" alt="health eating" width="300px">
+    <hr />
+    <p>
+        <strong>A good diet</strong>
+        <br />
+        The basic principles of good diets are so simple,
+        A summary in just ten words: eat less, move more, eat lots of fruits and vegetables. 
+        For additional clarification, a five-word modifier helps: go easy on junk foods. 
+        Follow these precepts and you will go a long way toward preventing the major diseases of our overfed society
+        <br />
+        <a href="https://www.who.int/initiatives/behealthy/healthy-diet" target=" _blank">
+            Learn more on WHO
+        </a>
+        </p>
+        <span class="more">
+            Health goes beyond diet. There are other factors that need to be 
+            considered. <br /> <a href="https://newstart.com/" target=" _blank">learn more</a> about NEWSTART
+        </span>
+        <button>
+            Order your healthy snacks here
+        </button>
+        </div>
+        <footer>
+            Coded By Santana
+        </footer>
+        <script>
+            function order() {
+            let name = prompt("What's your first name?");
+            let age = prompt ("How old are you?");
+
+if (age >= 16 ) {
+    alert("Hi, " + name + "! Welcome to our healthy shop, Good food awaits you!");
+            } else {
+                alert("Hi, " + name + "! Get your parents to assist, incase you have any allergies.");
+            }
+        }
+            let orderButton = document.querySelector("button");
+            orderButton.addEventListener("click", order);
+
+        </script>
+    </body>
+</html>
